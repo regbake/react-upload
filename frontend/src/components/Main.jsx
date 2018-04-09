@@ -18,7 +18,7 @@ class Main extends React.Component {
     data.append('file', this.uploadInput.files[0]);
     data.append('filename', this.fileName.value);
 
-    fetch('http://localhost:800/upload', {
+    fetch('http://localhost:8000/upload', {
       method: 'POST',
       body: data,
     }).then((response) => {
@@ -48,4 +48,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main; 
+export default Main;
